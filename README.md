@@ -12,22 +12,22 @@ the user is traveling at.
 ## Key Features
 - Menu Screen.
   - Upon opening the application, users are presented with the main menu screen, where they have the option to login, view the map, or change their preferences. Clicking each button leads to a new screen. <br />
-  - <img src="deliverable-4/frontend/demo/main.jpg" height= 600>
+  - <img src="frontend/demo/main.jpg" height= 600>
 - Log-in and registration screens. 
   - The login screen allows users to login to an account they already have or register for a new account. Though users are not required to make an account as they can directly use the app via the "Map" button. 
   - Benefits of having an account includes using the application on multiple devices and keeping your settings across devices.<br />
-    <img src="deliverable-4/frontend/demo/login.jpg" height= 600>
+    <img src="frontend/demo/login.jpg" height= 600>
 - Signup screen. 
   - Users can signup for a new account here, and have their settings stored for device switching. <br />
-    <img src="deliverable-4/frontend/demo/signup.jpg" height = 600>
+    <img src="frontend/demo/signup.jpg" height = 600>
 - Settings and prefereces screen. 
   - Here, users have the ability to change the following settings:
   - Their points of interest - cultural, agricultural, natural, historical, indigenous, etc.
   - Play full audio or audio of just short hooks. <br />
-    <img src="deliverable-4/frontend/demo/settings.jpg" height = 600>
+    <img src="frontend/demo/settings.jpg" height = 600>
 - Map screen.
   - Where the user is able to see points of interest and tap on them to read more about them. (This feature is currently not complete as there are bridging issues between our code and the previous group's code, to which we are extending. A temporary map screen is used in its stead.)<br />
-    <img src="deliverable-4/frontend/demo/map.jpg" height = 600>
+    <img src="frontend/demo/map.jpg" height = 600>
 
 ## Instructions
  * Clear instructions for how to use the application from the end-user's perspective
@@ -70,7 +70,7 @@ Change directory on terminal to the project's location and run ```npm i``` to in
 
 ```
 cd <project_location>
-cd ./deliverable-2/frontend
+cd ./frontend
 npm i
 ```
 
@@ -102,6 +102,3 @@ Describe your Git / GitHub workflow. Essentially, we want to understand how your
  ## Licenses 
 
  * We will resort to not having an open source license due to the fact that we are working with Ontario Parks, which operates under the government's supervision. While this application tries to meet the visions of the Arrowhead Assistant Superintendent, John Leadston, we are not sure which directions he intends to go with the application, so we will keep it private for now.
- 
- ## Video guide for the app:
- https://www.youtube.com/watch?v=ci3fq98RqIo
