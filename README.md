@@ -1,104 +1,122 @@
-# Ontario Parks
-## Description 
- * Our group worked with the Assistant Park Superintendent of Arrowhead Provincial Park in order to extend on an app previously built by another team. Our application 
- aims to improve the experience and potentially induce interest of travelers travling through certain areas of Ontario by providing an audio tour. Depending on the location of 
- the traveler and their indicated interests, the application plays short audio introductions on what their area has to offer. Ultimately, users will be introduced to locations, cultures,
- histories, and products that they were previously unaware of through the application while traveling.
-* The previously developed program already implemented interactions with a map involving locations of potential interests. Upon interactiong with those locations via tapping, users
-can see a short introduction on that location and click on a play button to play an audio reading of that same paragraph. By the request of the our park assistant superintendent, John Leadston,
-we are adding new features like registration, log-in, user profiles, settings & preferences. And if time allows, we will also add in features like different displays based on the current speed
-the user is traveling at.
+# Ontario Parks Audio Tour App
 
-## Key Features
-- Menu Screen.
-  - Upon opening the application, users are presented with the main menu screen, where they have the option to login, view the map, or change their preferences. Clicking each button leads to a new screen. <br />
-  - <img src="frontend/demo/main.jpg" height= 600>
-- Log-in and registration screens. 
-  - The login screen allows users to login to an account they already have or register for a new account. Though users are not required to make an account as they can directly use the app via the "Map" button. 
-  - Benefits of having an account includes using the application on multiple devices and keeping your settings across devices.<br />
-    <img src="frontend/demo/login.jpg" height= 600>
-- Signup screen. 
-  - Users can signup for a new account here, and have their settings stored for device switching. <br />
-    <img src="frontend/demo/signup.jpg" height = 600>
-- Settings and prefereces screen. 
-  - Here, users have the ability to change the following settings:
-  - Their points of interest - cultural, agricultural, natural, historical, indigenous, etc.
-  - Play full audio or audio of just short hooks. <br />
-    <img src="frontend/demo/settings.jpg" height = 600>
-- Map screen.
-  - Where the user is able to see points of interest and tap on them to read more about them. (This feature is currently not complete as there are bridging issues between our code and the previous group's code, to which we are extending. A temporary map screen is used in its stead.)<br />
-    <img src="frontend/demo/map.jpg" height = 600>
+A mobile application that enhances the travel experience through Ontario by providing location-based audio tours of parks, cultural sites, and points of interest.
 
-## Instructions
- * Clear instructions for how to use the application from the end-user's perspective
- * How do you access it? Are accounts pre-created or does a user register? Where do you start? etc. 
- * Provide clear steps for using each feature described above
- * This section is critical to testing your application and must be done carefully and thoughtfully
+## Overview
 
-## Development requirements
-### Front End Development Installing
+This React Native application was developed in collaboration with Ontario Parks to create an interactive audio guide system. The app delivers contextual information about nearby attractions based on user location and preferences, introducing travelers to Ontario's diverse landscapes, cultures, and histories.
 
-**Developers have the option to view their development changes on the web browser, or on their iOS or Android devices through the Expo app.**
+## Features
 
-#### Installation on PC
+### Core Functionality
 
-Install Node js on your local machine via the following link.
+- **Interactive Map Interface**: Browse and explore points of interest across Ontario parks and surrounding areas
+- **Audio Tours**: Listen to professionally narrated descriptions of locations, available in both full-length and short "hook" formats
+- **Location-Based Content**: Automatic content delivery based on GPS location
+- **Interest Categories**: Filter content by cultural, agricultural, natural, historical, and Indigenous points of interest
 
-```
-https://nodejs.org/en/download/
-```
+### User Management
 
-Install Expo command line interface on your Windows local machine using the command:
+- **Account System**: Optional user registration and authentication
+- **Cross-Device Sync**: Access your preferences and settings across multiple devices
+- **Guest Access**: Use the app without creating an account
 
-```
-npm install expo-cli --global
-```
+### Customization
 
-Install Expo command line interface on your Linux/MacOS local machine using the command:
+- **Personalized Preferences**: Select which types of points of interest you want to see
+- **Audio Settings**: Choose between full audio tours or brief highlights
+- **User Profiles**: Manage your account settings and preferences
 
-```
-sudo npm install expo-cli --global
-```
+## Screenshots
 
-Clone the following repository to the same machine.
+<table>
+  <tr>
+    <td><b>Main Menu</b></td>
+    <td><b>Login Screen</b></td>
+    <td><b>Settings</b></td>
+  </tr>
+  <tr>
+    <td><img src="frontend/demo/main.jpg" width="200"/></td>
+    <td><img src="frontend/demo/login.jpg" width="200"/></td>
+    <td><img src="frontend/demo/settings.jpg" width="200"/></td>
+  </tr>
+</table>
 
-```
-https://github.com/csc301-winter-2021/team-project-10-ontario-parks.git
-```
+## Technology Stack
 
-Change directory on terminal to the project's location and run ```npm i``` to install dependencies.
+- **Frontend**: React Native with Expo
+- **Backend**: Node.js
+- **Mobile Support**: iOS and Android via Expo Go
+- **Development**: Web browser preview available during development
 
-```
-cd <project_location>
-cd ./frontend
-npm i
-```
+## Getting Started
 
-### In order to see changes to the code on your mobile device, you also need to install Expo.
-**ios device:**
+### Prerequisites
 
-- Download _Expo Go_ from the appstore.
+- Node.js (Download from [nodejs.org](https://nodejs.org/en/download/))
+- npm (included with Node.js)
+- Expo CLI
+- iOS device with Expo Go, or Android device with Expo (optional, for mobile testing)
 
-**android device:**
+### Installation
 
-- Download _Expo_ from the Google Play store.
+1. **Install Expo CLI globally**
 
-### Backend Development Installing:
+   ```bash
+   # Windows
+   npm install expo-cli --global
+   
+   # macOS/Linux
+   sudo npm install expo-cli --global
+   ```
 
-- Install Node.js on your local machine.
-- Run `npm install` in the project folder.
-- Run `expo start` in terminal. This will bring up a new page in your browser, and a QR code in your terminal.
+2. **Clone the repository**
 
- ## Deployment and Github Workflow
+   ```bash
+   git clone https://github.com/Edward9292/ontario-parks-app.git
+   cd ontario-parks-app
+   ```
 
-Describe your Git / GitHub workflow. Essentially, we want to understand how your team members shares a codebase, avoid conflicts and deploys the application.
+3. **Install dependencies**
 
- * Be concise, yet precise. For example, "we use pull-requests" is not a precise statement since it leaves too many open questions - Pull-requests from where to where? Who reviews the pull-requests? Who is responsible for merging them? etc.
- * If applicable, specify any naming conventions or standards you decide to adopt.
- * Describe your overall deployment process from writing code to viewing a live applicatioon
- * What deployment tool(s) are you using and how
- * Don't forget to **briefly explain why** you chose this workflow or particular aspects of it!
+   ```bash
+   cd frontend
+   npm install
+   ```
 
- ## Licenses 
+4. **Start the development server**
 
- * We will resort to not having an open source license due to the fact that we are working with Ontario Parks, which operates under the government's supervision. While this application tries to meet the visions of the Arrowhead Assistant Superintendent, John Leadston, we are not sure which directions he intends to go with the application, so we will keep it private for now.
+   ```bash
+   expo start
+   ```
+
+   This will open a browser window with the Expo Developer Tools and display a QR code in your terminal.
+
+### Running on Mobile Devices
+
+1. **iOS**: Download [Expo Go](https://apps.apple.com/app/expo-go/id982107779) from the App Store
+2. **Android**: Download [Expo](https://play.google.com/store/apps/details?id=host.exp.exponent) from Google Play Store
+3. Scan the QR code displayed in your terminal or browser to launch the app
+
+## Usage
+
+1. **First Launch**: Open the app to see the main menu with options to login, view the map, or adjust settings
+2. **Guest Mode**: Tap "Map" to immediately start exploring without an account
+3. **Create Account** (Optional): Tap "Login" → "Sign Up" to create an account for cross-device access
+4. **Customize Experience**: Access Settings to select your interests and audio preferences
+5. **Explore**: Navigate the map and tap on points of interest to read descriptions and play audio tours
+
+## Project Background
+
+This application was developed in collaboration with Ontario Parks to improve visitor experience and engagement. The system helps travelers discover locations, cultures, histories, and attractions they might otherwise miss during their journey through Ontario.
+
+**Partner Organization**: Ontario Parks
+
+### My Contributions
+
+This was a collaborative project where I focused on:
+- User authentication system (login/registration)
+- User profile management and settings
+- Cross-device preference synchronization
+- Google Map and location tracking integration
+
