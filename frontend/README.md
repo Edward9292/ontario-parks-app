@@ -1,6 +1,4 @@
 # Ontario Parks
-
-> _Note:_ This document is intended to be relatively short. Be concise and precise. Assume the reader has no prior knowledge of your application and is non-technical. 
 ## Description 
  * Our group is currently working with the Assistant Park Superintendent of Arrowhead Provincial Park in order to extend on an app previously built by another team. Our application 
  aims to improve the experience and potentially induce interest of travelers travling through certain areas of Ontario by providing an audio tour. Depending on the location of 
