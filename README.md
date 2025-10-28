@@ -31,14 +31,14 @@ This React Native application was developed in collaboration with Ontario Parks 
 
 <table>
   <tr>
-    <td><b>Main Menu</b></td>
     <td><b>Login Screen</b></td>
     <td><b>Settings</b></td>
+    <td><b>Map</b></td>
   </tr>
   <tr>
-    <td><img src="frontend/demo/main.jpg" width="200"/></td>
     <td><img src="frontend/demo/login.jpg" width="200"/></td>
     <td><img src="frontend/demo/settings.jpg" width="200"/></td>
+    <td><img src="frontend/demo/map.jpg" width="200"/></td>
   </tr>
 </table>
 
